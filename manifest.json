@@ -3,8 +3,21 @@
   "version": "1.0",
   "description": "UI Simulator for web pages.",
   "manifest_version": 2,
-  "background": {},
-  "permissions": [],
-  "options_page": "",
-  "content_scripts": []
+  "background": {
+    "scripts": [
+      "background.bundle.js"
+    ],
+    "persistent": false
+  },
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.bundle.js"]
+    }
+  ]
 }

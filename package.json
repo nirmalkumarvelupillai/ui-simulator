@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nirmalkumarvelupillai/ui-simulator.git"
@@ -15,5 +12,25 @@
   "bugs": {
     "url": "https://github.com/nirmalkumarvelupillai/ui-simulator/issues"
   },
-  "homepage": "https://github.com/nirmalkumarvelupillai/ui-simulator#readme"
+  "homepage": "https://github.com/nirmalkumarvelupillai/ui-simulator#readme",
+  "scripts": {
+    "webpack": "webpack --progress",
+    "development": "yarn webpack --mode development",
+    "production": "yarn webpack --mode production",
+    "watch": "yarn development --watch",
+    "sync": "yarn watch --sync"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.55",
+    "@babel/preset-env": "^7.0.0-beta.55",
+    "babel-loader": "^8.0.0-beta",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.0.3",
+    "html-webpack-plugin": "^3.2.0",
+    "vue": "^2.5.22",
+    "vue-loader": "^15.6.2",
+    "vue-template-compiler": "^2.5.22",
+    "webpack": "^4.16.0",
+    "webpack-cli": "^3.1.0"
+  }
 }
