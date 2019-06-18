@@ -1,0 +1,10 @@
+{
+  "name": "UI Simulator",
+  "version": "1.0",
+  "description": "UI Simulator for web pages.",
+  "manifest_version": 2,
+  "background": {},
+  "permissions": [],
+  "options_page": "",
+  "content_scripts": []
+}
